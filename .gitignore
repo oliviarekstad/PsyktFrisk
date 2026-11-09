@@ -1,0 +1,44 @@
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# iOS build files and local Xcode settings
+ios/Pods/
+ios/build/
+ios/DerivedData/
+*.xcuserstate
+xcuserdata/
+
+# Android build files
+android/.gradle/
+android/build/
+android/app/build/
+local.properties
+
+# Private credentials and certificates
+*.p8
+*.p12
+*.mobileprovision
+*.keystore
+*.jks
+*.pem
+*.key
+
+# Local backups
+*.bak
+*.backup
+node_modules
+
+# Expo local files
+.expo/
+**/.expo/
+
+# Xcode local environment
+ios/.xcode.env
+ios/.xcode.env.local
+
+# Local assistant configuration
+.claude/

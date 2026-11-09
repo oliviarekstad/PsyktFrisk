@@ -1,0 +1,16 @@
+PsyktFrisk – kryptert dagbok, første implementasjon
+
+1. Ta backup av eksisterende prosjekt.
+2. Kopier innholdet fra denne pakken inn i originalprosjektet (ikke erstatt din eksisterende .env).
+3. Kjør npm install i prosjektmappen.
+4. Kjør supabase-setup.sql i Supabase SQL Editor.
+5. Kjør npx expo start --clear og test i Expo Go på iPhone.
+6. Åpne Dagbokskort, opprett nøkkel, skriv gjenopprettingskoden ned og lagre en testregistrering.
+7. Lukk og åpne appen; kontroller at registreringen hentes.
+8. Test nøkkelgjenoppretting på en separat testinstallasjon før ekte data.
+
+VIKTIG: Dette er en første teknisk implementasjon, ikke en uavhengig sikkerhetsrevidert produksjonsløsning.
+Ingen .env eller node_modules følger med. Krypteringsnøkkelen lagres i SecureStore på telefonen.
+Gjenopprettingskoden er selve 256-bitnøkkelen: alle som får den kan lese dagboken.
+Dato, bruker-ID og tidsstempler er ikke kryptert. Innhold i utviklingsskjermen er fortsatt eksempeldata.
+Web er ikke støttet for kryptert dagbok i denne versjonen.
